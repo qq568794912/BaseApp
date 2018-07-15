@@ -1,7 +1,5 @@
 package com.bzl.util;
 
-import static com.blankj.utilcode.constant.PermissionConstants.Permission;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -9,8 +7,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.blankj.utilcode.constant.PermissionConstants;
-import com.blankj.utilcode.util.PermissionUtils.OnRationaleListener.ShouldRequest;
+import com.bzl.constant.PermissionConstants;
 
 import android.app.Activity;
 import android.content.Context;
@@ -115,7 +112,7 @@ public final class PermissionUtils {
      * @param permissions The permissions.
      * @return the single {@link PermissionUtils} instance
      */
-    public static PermissionUtils permission(@Permission final String... permissions) {
+    public static PermissionUtils permission(@PermissionConstants.Permission final String... permissions) {
         return new PermissionUtils(permissions);
     }
 
@@ -214,7 +211,7 @@ public final class PermissionUtils {
             for (String permission : mPermissionsRequest) {
                 if (activity.shouldShowRequestPermissionRationale(permission)) {
                     getPermissionsStatus(activity);
-                    mOnRationaleListener.rationale(new ShouldRequest() {
+                    mOnRationaleListener.rationale(new OnRationaleListener.ShouldRequest() {
                         @Override
                         public void again(boolean again) {
                             if (again) {

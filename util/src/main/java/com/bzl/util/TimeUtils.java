@@ -7,7 +7,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import com.blankj.utilcode.constant.TimeConstants;
+import com.bzl.constant.TimeConstants;
 
 import android.annotation.SuppressLint;
 import android.support.annotation.NonNull;

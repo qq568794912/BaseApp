@@ -5,7 +5,7 @@ import java.io.Serializable;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import com.blankj.utilcode.constant.CacheConstants;
+import com.bzl.constant.CacheConstants;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;

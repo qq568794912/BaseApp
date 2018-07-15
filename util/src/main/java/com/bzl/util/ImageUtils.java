@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import com.blankj.utilcode.constant.MemoryConstants;
+import com.bzl.constant.MemoryConstants;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
