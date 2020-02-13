@@ -12,6 +12,8 @@ import android.util.Log;
 public class SRecyclerView extends RecyclerView {
   private static final String TAG = "SRecyclerView";
 
+  // https://blog.csdn.net/fyfcauc/article/details/54342303
+
   // layout时，记录Recycler里mAttachedScrap
   // Recycler的第一层缓存
   // ScrapView：仍被Attach到RecyclerView上，有资格被重用或rebind。存在Recycler成员变量里

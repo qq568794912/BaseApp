@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <EditText
+      android:id="@+id/emoji_edit"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"/>
+
+    <Button
+      android:id="@+id/emoji_toast"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:text="弹出文本"
+      android:layout_marginTop="60dp"/>
+
+
+</FrameLayout>
