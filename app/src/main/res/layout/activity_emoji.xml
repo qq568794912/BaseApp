@@ -18,5 +18,11 @@
       android:text="弹出文本"
       android:layout_marginTop="60dp"/>
 
+    <android.support.text.emoji.widget.EmojiTextView
+      android:id="@+id/compat_emoji_edit"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_marginTop="120dp"/>
+
 
 </FrameLayout>

@@ -1,0 +1,27 @@
+编码基础：
+    ASCII码，它用每个情况表示一个符号，ASCII 码一共定义了 128 个字符
+    Unicode编码，它就相当是ASCII 的一个扩展，但是，有会出现了一些问题.Unicode码也是一种国际标准编码，采用二个字节编码
+    UTF-8编码（我这只是简单的说）就当是规范了Unicode 编码
+
+一个emoji占2个字节，一个unicode编码(2B)，"\ud83d\ude01"
+
+AS工具用Unicode显示
+Log用utf-8显示
+emoji是用unicode展示的
+后端不支持emoji，需要base64等转换后上传，再解析
+
+https://www.jianshu.com/p/d82ac2edc7e8
+https://www.jianshu.com/p/218cb890eccc
+https://developer.android.com/guide/topics/ui/look-and-feel/emoji-compat
+https://www.cnblogs.com/crazylqy/p/10184291.html 搞懂unicode编码
+https://www.cnblogs.com/crazylqy/p/10183734.html
+
+https://blog.csdn.net/geniushorse/article/details/88187206
+https://github.com/googlearchive/android-EmojiCompat
+
+ttf真实含义：https://www.zhihu.com/question/27636723
+fonttools:https://github.com/fonttools/fonttools
+
+TextView.TransformationMethod 替换逻辑
+
+本身就有支持emoji，可能显示空框（不能显示特定emoji）。EmojiCompat，增加字体（unicode码---》统一字体库显示）

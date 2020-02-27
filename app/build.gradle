@@ -32,6 +32,8 @@ dependencies {
     // https://www.jianshu.com/p/f7a7a8765294
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "com.android.support:design:${rootProject.ext.supportLibVersion}"
+    implementation "com.android.support:support-emoji:${rootProject.ext.supportLibVersion}"
+    implementation "com.android.support:support-emoji-bundled:${rootProject.ext.supportLibVersion}"
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
 
     implementation "io.reactivex.rxjava2:rxjava:2.2.17"
