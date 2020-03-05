@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+
+    <Button
+      android:id="@+id/btn1"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:text="btn"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toLeftOf="@id/btn2"
+      app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="评论"
+      android:textSize="14sp"
+      app:layout_constraintCircle="@id/btn1"
+      app:layout_constraintCircleAngle="180"
+      app:layout_constraintCircleRadius="35dp"
+      tools:ignore="MissingConstraints"/>
+    <android.support.constraint.Guideline
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:id="@+id/guildline"
+      app:layout_constraintWidth_percent="0.2"/>
+    <ImageView
+      android:layout_width="14dp"
+      android:layout_height="5dp"
+      android:background="#FF0000"
+      app:layout_constraintRight_toLeftOf="@id/guildline"
+      tools:ignore="MissingConstraints"/>
+
+    <Button
+      android:id="@+id/btn2"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:text="btn"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toRightOf="@id/btn1"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="评论dafadfagasgasg"
+      android:textSize="14sp"
+      app:layout_constraintCircle="@id/btn2"
+      app:layout_constraintCircleAngle="180"
+      app:layout_constraintCircleRadius="35dp"
+      tools:ignore="MissingConstraints"/>
+
+
+</android.support.constraint.ConstraintLayout>

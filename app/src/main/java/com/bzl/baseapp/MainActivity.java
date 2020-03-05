@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.bzl.butterknife.ButterKnifeActivity;
+import com.bzl.constraintlayout.ConstraintLayoutActivity;
 import com.bzl.emoji.EmojiActivity;
 import com.bzl.recyclerview.RecyclerViewActivity;
 import com.bzl.rxjava.RxjavaActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         mData.add(new MainDataBean("RxJava示例", RxjavaActivity.class));
         mData.add(new MainDataBean("ButterKnife示例", ButterKnifeActivity.class));
         mData.add(new MainDataBean("Emoji示例", EmojiActivity.class));
+        mData.add(new MainDataBean("ConstraintLayout示例", ConstraintLayoutActivity.class));
     }
 
     @Override
